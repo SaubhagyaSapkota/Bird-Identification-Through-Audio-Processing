@@ -1,0 +1,8 @@
+*.keras
+*.pyd
+*.dll
+*/__pycache__/
+*/myworld/
+*.zip
+*.exe
+*.log
