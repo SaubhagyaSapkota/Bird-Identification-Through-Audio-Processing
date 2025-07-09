@@ -86,52 +86,6 @@ const App = () => {
     }
   };
 
-  // const handleSubmit = async () => {
-  //   if (!audioUri) {
-  //     Alert.alert("Error", "No audio uploaded. Please try again.");
-  //     return;
-  //   }
-  //   setLoading(true);
-
-  //   const formData = new FormData();
-
-  //   // Convert URI to Blob (React Native fix)
-  //   const response = await fetch(audioUri);
-  //   const blob = await response.blob();
-  //   try {
-  //     const backendUrl = "http://192.168.1.67:8000/";
-  //     const response = await fetch(backendUrl, {
-  //       method: "POST",
-  //       body: formData,
-  //       // headers: {
-  //       //   "Content-Type": "multipart/form-data",
-  //       // },
-  //     });
-  //     if (!response.ok) {
-  //       console.error("Server response:", response);
-  //       throw new Error(`Server error: ${response.status}`);
-  //     }
-
-  //     // const data: {
-  //     //   class_name: string;
-  //     //   probabilities: number[];
-  //     //   bird_details: {
-  //     //     ScientificName?: string;
-  //     //     MoreInfo?: string;
-  //     //   };
-  //     // } = await response.json();
-  //     const data = await response.json();
-  //     console.log("Server response data:", data);
-  //     setResult(data);
-  //   } catch (error) {
-  //     const errMessage =
-  //       error instanceof Error ? error.message : "An unknown error occurred";
-  //     Alert.alert("Error", errMessage);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
-
   const handleSubmit = async () => {
     if (!audioUri) {
       Alert.alert("Error", "No audio uploaded. Please upload again.");
